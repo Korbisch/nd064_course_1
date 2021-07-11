@@ -10,8 +10,8 @@ spec:
   ports:
   - port: {{ .Values.service.port }}
     protocol: TCP
-    targetPort: 8111
+    targetPort: {{ .Values.service.port }}
   selector:
     app: nginx
-    tag: {{ .Values.image.tag }}
+    tag: alpine
   type: {{ .Values.service.type }}
