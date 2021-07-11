@@ -1,6 +1,10 @@
 namspace:
   name: staging
 
+service:
+  port: 8111
+  type: ClusterIP
+
 replicaCount: 1
 
 image:
